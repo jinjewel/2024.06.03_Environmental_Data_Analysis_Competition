@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7c48f02d133d82547b3df7f552412524 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7c48f02d133d82547b3df7f552412524" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7c48f02d133d82547b3df7f552412524 = L.map(
+                "map_7c48f02d133d82547b3df7f552412524",
+                {
+                    center: [37.2804, 127.0079],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b525c96cf22d8771e37a61f9547b2e2d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b525c96cf22d8771e37a61f9547b2e2d.addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            var circle_marker_709a51db1912a7f938a80b2f9fb486b9 = L.circleMarker(
+                [37.2148, 127.0214],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_709a51db1912a7f938a80b2f9fb486b9.bindTooltip(
+                `<div>
+                     경기도 화성시 송산동 5-1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23c1320bc239ffe90c89ce2732f0dbc8 = L.circleMarker(
+                [37.2843, 126.9871],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_23c1320bc239ffe90c89ce2732f0dbc8.bindTooltip(
+                `<div>
+                     경기도 수원시 팔달구 화서동 410-6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_371c8ea17ed639a3912190c850b6e603 = L.circleMarker(
+                [37.2114, 127.0265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_371c8ea17ed639a3912190c850b6e603.bindTooltip(
+                `<div>
+                     경기도 화성시 태안로 263
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_644d4cff5428de38f40446a3b8551e68 = L.circleMarker(
+                [37.2352, 126.9884],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_644d4cff5428de38f40446a3b8551e68.bindTooltip(
+                `<div>
+                     경기도 수원시 매송고색로 804번길 432
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2013e10a05316f008b7af448e180f09f = L.circleMarker(
+                [37.2352, 126.9884],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_2013e10a05316f008b7af448e180f09f.bindTooltip(
+                `<div>
+                     경기도 수원시 매송고색로 804번길 432
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4073adbd1fb6c452fe071cbb6a07a0de = L.circleMarker(
+                [37.2352, 126.9884],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_4073adbd1fb6c452fe071cbb6a07a0de.bindTooltip(
+                `<div>
+                     경기도 수원시 매송고색로 804번길 432
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fc9b22f09627bc96755efbfd45b9a655 = L.circleMarker(
+                [37.2352, 126.9884],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_fc9b22f09627bc96755efbfd45b9a655.bindTooltip(
+                `<div>
+                     경기도 수원시 매송고색로 804번길 432
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4f7c93012ab8613a23d8fb844291c033 = L.circleMarker(
+                [37.2345, 126.9887],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_4f7c93012ab8613a23d8fb844291c033.bindTooltip(
+                `<div>
+                     경기도 수원시 권선구 매송고색로804번길 451
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49c5dc5f22f4a73dd607d095a81683db = L.circleMarker(
+                [37.2357, 127.0178],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_7c48f02d133d82547b3df7f552412524);
+        
+    
+            circle_marker_49c5dc5f22f4a73dd607d095a81683db.bindTooltip(
+                `<div>
+                     경기도 수원시 정조로 253-9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var measure_control_220292433dc017e51798bf93288f3abc = new L.Control.Measure(
+                {"position": "topright", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "meters", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
+            map_7c48f02d133d82547b3df7f552412524.addControl(measure_control_220292433dc017e51798bf93288f3abc);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+</script>
+</html>

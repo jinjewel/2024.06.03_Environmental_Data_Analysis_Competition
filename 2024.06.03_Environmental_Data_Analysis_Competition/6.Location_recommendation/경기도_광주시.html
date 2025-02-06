@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_69a41bfd222a5d01f1c26add24b16391 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_69a41bfd222a5d01f1c26add24b16391" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_69a41bfd222a5d01f1c26add24b16391 = L.map(
+                "map_69a41bfd222a5d01f1c26add24b16391",
+                {
+                    center: [37.4352, 127.301],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6743d57caf4f37838113bd7f3f6d6bac = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6743d57caf4f37838113bd7f3f6d6bac.addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            var circle_marker_ac7a075198081947f6e229ec493870c2 = L.circleMarker(
+                [37.36, 127.3229],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_ac7a075198081947f6e229ec493870c2.bindTooltip(
+                `<div>
+                     경기도 광주시 곤지암읍 평촌길 12-125
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0118a1536f49f4c602f657de9e0e0cf = L.circleMarker(
+                [37.5006, 127.3057],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_e0118a1536f49f4c602f657de9e0e0cf.bindTooltip(
+                `<div>
+                     경기도 광주시 남종면 산수로 1704
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2707536176ed77f4095ea8aeaed8fda5 = L.circleMarker(
+                [37.5075, 127.3176],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_2707536176ed77f4095ea8aeaed8fda5.bindTooltip(
+                `<div>
+                     경기도 광주시 남종면 산수로 1884
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1f6dce3a1a1c4ced8032fd61e781ef0b = L.circleMarker(
+                [37.5314, 127.3541],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_1f6dce3a1a1c4ced8032fd61e781ef0b.bindTooltip(
+                `<div>
+                     경기도 광주시 남종면 산수로 2468
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a40c2d5f51e4575655ae61a9854d9f58 = L.circleMarker(
+                [37.5056, 127.376],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_a40c2d5f51e4575655ae61a9854d9f58.bindTooltip(
+                `<div>
+                     경기도 광주시 남종면 수청리 205-7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a0df4c0dd4485df1efe1a09796cde2b = L.circleMarker(
+                [37.4861, 127.2859],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_0a0df4c0dd4485df1efe1a09796cde2b.bindTooltip(
+                `<div>
+                     경기도 광주시 남종면 태허정로 404번길 89
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_42ec6ba147f286fbaface55e8ab8fc04 = L.circleMarker(
+                [37.4547, 127.2325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_42ec6ba147f286fbaface55e8ab8fc04.bindTooltip(
+                `<div>
+                     경기도 광주시 남한산성면 남한산성로 184
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9f838f78687474d2509be250a42db939 = L.circleMarker(
+                [37.4661, 127.2075],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_9f838f78687474d2509be250a42db939.bindTooltip(
+                `<div>
+                     경기도 광주시 남한산성면 남한산성로 495
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_11fb13cc18198ef04b379e5fd6951a63 = L.circleMarker(
+                [37.475, 127.1922],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_11fb13cc18198ef04b379e5fd6951a63.bindTooltip(
+                `<div>
+                     경기도 광주시 남한산성면 남한산성로 700
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_27dac2f8b8d4093f56c2999f1a1621b2 = L.circleMarker(
+                [37.4576, 127.2167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_27dac2f8b8d4093f56c2999f1a1621b2.bindTooltip(
+                `<div>
+                     경기도 광주시 남한산성면 불당길 19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_890c4988dabc3ec2fc5be79680797fcd = L.circleMarker(
+                [37.441, 127.2952],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_890c4988dabc3ec2fc5be79680797fcd.bindTooltip(
+                `<div>
+                     경기도 광주시 남한산성면 해공로 427
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d09a336e1ac766112ca2086b5bbb430 = L.circleMarker(
+                [37.472, 127.249],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_5d09a336e1ac766112ca2086b5bbb430.bindTooltip(
+                `<div>
+                     경기도 광주시 남한산성면 회안대로 1551
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b8abe283bed37179c0b402e24591e19a = L.circleMarker(
+                [37.339, 127.3345],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_b8abe283bed37179c0b402e24591e19a.bindTooltip(
+                `<div>
+                     경기도 광주시 도척면 궁평하천길 58
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_78c86d707ae94d65286a3203e5bc907c = L.circleMarker(
+                [37.278, 127.2912],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_78c86d707ae94d65286a3203e5bc907c.bindTooltip(
+                `<div>
+                     경기도 광주시 도척면 도척로 1084-37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_51b12497a0106b72322ad0c3fe29ca05 = L.circleMarker(
+                [37.2793, 127.3665],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_51b12497a0106b72322ad0c3fe29ca05.bindTooltip(
+                `<div>
+                     경기도 광주시 도척면 마도로 19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab254f02c3d5e006208ded70bae8a098 = L.circleMarker(
+                [37.3583, 127.2399],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_ab254f02c3d5e006208ded70bae8a098.bindTooltip(
+                `<div>
+                     경기도 광주시 오포읍 독산동길 70
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_025d3b9c828ed636203add0ad3f381c9 = L.circleMarker(
+                [37.3481, 127.2196],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_025d3b9c828ed636203add0ad3f381c9.bindTooltip(
+                `<div>
+                     경기도 광주시 오포읍 문현로 71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8de5d2a053c2c91609f059f698f3e0ad = L.circleMarker(
+                [37.3999, 127.2613],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_8de5d2a053c2c91609f059f698f3e0ad.bindTooltip(
+                `<div>
+                     경기도 광주시 오포읍 청석로 149
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c3a6071e5949dddaf7dab7de500d0b76 = L.circleMarker(
+                [37.4197, 127.2851],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_c3a6071e5949dddaf7dab7de500d0b76.bindTooltip(
+                `<div>
+                     경기도 광주시 초월읍 경수길 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8078de09b382fdde7927b3f6c6aaa41c = L.circleMarker(
+                [37.4, 127.2931],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_8078de09b382fdde7927b3f6c6aaa41c.bindTooltip(
+                `<div>
+                     경기도 광주시 초월읍 현산로 130-24
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be6c1075b94e6059639ab427830e7dc4 = L.circleMarker(
+                [37.4721, 127.3058],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_be6c1075b94e6059639ab427830e7dc4.bindTooltip(
+                `<div>
+                     경기도 광주시 퇴촌면 산수로 1321
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e2610767efedc1a04821bf6b858c122 = L.circleMarker(
+                [37.4781, 127.3869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_5e2610767efedc1a04821bf6b858c122.bindTooltip(
+                `<div>
+                     경기도 광주시 퇴촌면 정영로 973
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6f530591a87fa4552de0611cb548236d = L.circleMarker(
+                [37.4003, 127.2946],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_69a41bfd222a5d01f1c26add24b16391);
+        
+    
+            circle_marker_6f530591a87fa4552de0611cb548236d.bindTooltip(
+                `<div>
+                     경기도 광주시 초월읍 도평리 17-1번지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var measure_control_371bf462d97fc63b2cb5dfa30e7377b4 = new L.Control.Measure(
+                {"position": "topright", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "meters", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
+            map_69a41bfd222a5d01f1c26add24b16391.addControl(measure_control_371bf462d97fc63b2cb5dfa30e7377b4);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+</script>
+</html>

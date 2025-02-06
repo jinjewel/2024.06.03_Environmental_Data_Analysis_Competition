@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a69bf7f3c84ecdfa410b6d62b591c388 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a69bf7f3c84ecdfa410b6d62b591c388" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a69bf7f3c84ecdfa410b6d62b591c388 = L.map(
+                "map_a69bf7f3c84ecdfa410b6d62b591c388",
+                {
+                    center: [35.8266, 129.236],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e8344aea8a628e3a0c40ce022bb82e52 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e8344aea8a628e3a0c40ce022bb82e52.addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            var polygon_4c44f9904a03a5d2dbc511d4f9d7f895 = L.polygon(
+                [[35.6508, 129.4498], [35.848, 129.5198], [35.8438, 129.5162], [35.8522, 129.4851], [35.8474, 129.4539], [35.8789, 129.4363], [35.8838, 129.4237], [35.8613, 129.4102], [35.8651, 129.3604], [35.8739, 129.3553], [35.877, 129.3631], [35.8878, 129.3612], [35.8913, 129.3382], [36.0263, 129.2776], [36.0701, 129.2857], [36.0796, 129.2743], [36.0729, 129.2473], [36.0316, 129.1889], [36.0544, 129.1658], [36.0548, 129.1511], [36.0359, 129.1358], [36.0107, 129.1448], [36.0054, 129.1268], [36.013, 129.116], [35.9613, 129.1164], [35.9314, 129.1364], [35.9167, 129.1187], [35.9398, 129.095], [35.941, 129.0658], [35.9064, 129.0264], [35.7379, 128.9656], [35.6405, 129.0748], [35.6467, 129.0814], [35.6719, 129.0678], [35.7029, 129.0914], [35.7202, 129.1554], [35.6973, 129.2593], [35.6601, 129.2557], [35.6473, 129.3001], [35.6785, 129.3567], [35.6508, 129.4498]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            var circle_marker_c19d527b087c242517c85618de33d21a = L.circleMarker(
+                [35.8912, 129.2322],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_c19d527b087c242517c85618de33d21a.bindTooltip(
+                `<div>
+                     경상북도 경주시 천북면 신당리 1362-2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_98d98e95c55c1a9cb75a1bca7eca9977 = L.circleMarker(
+                [35.9822, 129.2446],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_98d98e95c55c1a9cb75a1bca7eca9977.bindTooltip(
+                `<div>
+                     경상북도 경주시 강동면 호명리 473
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f12cacea4260bb2cb068ea162ad8aa36 = L.circleMarker(
+                [35.695, 129.3232],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_f12cacea4260bb2cb068ea162ad8aa36.bindTooltip(
+                `<div>
+                     경상북도 경주시 외동읍 문산리 864-6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13316abff3eed953ab0d83d31cc81a6a = L.circleMarker(
+                [35.8018, 129.4942],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_13316abff3eed953ab0d83d31cc81a6a.bindTooltip(
+                `<div>
+                     경상북도 경주시 감포읍 전동리 50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f1f20106d70c402175eb8094b5cfb8dd = L.circleMarker(
+                [35.8401, 129.1222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_f1f20106d70c402175eb8094b5cfb8dd.bindTooltip(
+                `<div>
+                     경상북도 경주시 건천읍 금척리 19-1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_443e9d004f655e1dabb45b73a3e8ed46 = L.circleMarker(
+                [35.6872, 129.4579],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_443e9d004f655e1dabb45b73a3e8ed46.bindTooltip(
+                `<div>
+                     경상북도 경주시 양남면 하서리 1143
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b0c29d213d93008c4b8944c0fe7b3bd = L.circleMarker(
+                [35.771, 129.4496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_3b0c29d213d93008c4b8944c0fe7b3bd.bindTooltip(
+                `<div>
+                     경상북도 경주시 양북면 어일리 270
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08442a8c060652582f8c9158701cd93f = L.circleMarker(
+                [35.7453, 129.2016],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_08442a8c060652582f8c9158701cd93f.bindTooltip(
+                `<div>
+                     경상북도 경주시 내남면 노곡리 886
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2fee5ab28b2e85977f755d0a5493a5dc = L.circleMarker(
+                [35.8823, 129.0719],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_2fee5ab28b2e85977f755d0a5493a5dc.bindTooltip(
+                `<div>
+                     경상북도 경주시 서면 사라리 694-2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0718e285bad734ccbc6188286aacbf0 = L.circleMarker(
+                [35.7324, 129.1587],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_a0718e285bad734ccbc6188286aacbf0.bindTooltip(
+                `<div>
+                     경상북도 경주시 양북면 장항리 1187-13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61de58a94ff7c09294bea9cac61c3548 = L.circleMarker(
+                [35.7349, 129.0605],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_61de58a94ff7c09294bea9cac61c3548.bindTooltip(
+                `<div>
+                     산내면 대현리3127-5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b7da4895c339333de8966308906e7163 = L.circleMarker(
+                [35.6927, 129.0575],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_b7da4895c339333de8966308906e7163.bindTooltip(
+                `<div>
+                     산내면 대현리1985-1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc7bb7bf68abde53bd205826b577d744 = L.circleMarker(
+                [35.7504, 129.0377],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_bc7bb7bf68abde53bd205826b577d744.bindTooltip(
+                `<div>
+                     산내면 의곡리 519-43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab1d4b67542c838f0786fc8f77511547 = L.circleMarker(
+                [35.8861, 129.2634],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_ab1d4b67542c838f0786fc8f77511547.bindTooltip(
+                `<div>
+                     경상북도 경주시 천북면 동산덕산길 136-2 (덕산리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fced09f14efd9bb142ae9942a39bdc1e = L.circleMarker(
+                [35.8419, 129.0908],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_fced09f14efd9bb142ae9942a39bdc1e.bindTooltip(
+                `<div>
+                     경상북도 경주시 건천읍 내서로 1042 (천포리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72eb8b6b1605967af9e69a6cfce36a1b = L.circleMarker(
+                [35.8283, 129.1923],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_72eb8b6b1605967af9e69a6cfce36a1b.bindTooltip(
+                `<div>
+                     경상북도 경주시 서악동 1117-1번지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_52c5567787827125410f61b6d87eec1b = L.circleMarker(
+                [35.9247, 129.2507],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_52c5567787827125410f61b6d87eec1b.bindTooltip(
+                `<div>
+                     경상북도 경주시 천북면 모아길 46 (모아리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_560c16aa7eb19a2493b4da20e27c9a2a = L.circleMarker(
+                [35.7799, 129.492],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_560c16aa7eb19a2493b4da20e27c9a2a.bindTooltip(
+                `<div>
+                     경상북도 경주시 감포읍 나정리 213-1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_575dceb34935d9fbd3770d327ae3e0f6 = L.circleMarker(
+                [35.7537, 129.4924],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_575dceb34935d9fbd3770d327ae3e0f6.bindTooltip(
+                `<div>
+                     경상북도 경주시 감포읍 동해안로 1618 (대본리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6d4397a72811ec5e7db9f157b3aa65c5 = L.circleMarker(
+                [35.7438, 129.4814],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_6d4397a72811ec5e7db9f157b3aa65c5.bindTooltip(
+                `<div>
+                     경상북도 경주시 감포읍 대본리 1158
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_402f3e12ca2b61e2ee4d767a6dccaf0b = L.circleMarker(
+                [35.8267, 129.1392],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_402f3e12ca2b61e2ee4d767a6dccaf0b.bindTooltip(
+                `<div>
+                     경상북도 경주시 고란길 179 (광명동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b9f5e950dfd34ea6fc1a0f80035f790c = L.circleMarker(
+                [35.7757, 129.201],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_b9f5e950dfd34ea6fc1a0f80035f790c.bindTooltip(
+                `<div>
+                     경상북도 경주시 내남면 용장1길 46 (용장리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13552da44473701ce6d3e0dfba42efdc = L.circleMarker(
+                [35.9383, 129.2533],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_13552da44473701ce6d3e0dfba42efdc.bindTooltip(
+                `<div>
+                     경상북도 경주시 천북면 한백길 8-48 (오야리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a2dedaa93820f66b3260227145567df = L.circleMarker(
+                [35.8271, 129.1088],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_8a2dedaa93820f66b3260227145567df.bindTooltip(
+                `<div>
+                     경상북도 경주시 건천읍 천포방내길 255-24 (방내리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_02af44ec0803eabf4d762a7d7fab742a = L.circleMarker(
+                [35.9459, 129.2472],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_02af44ec0803eabf4d762a7d7fab742a.bindTooltip(
+                `<div>
+                     경상북도 경주시 강동면 모서안길 12 (모서리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d6f5a7a9dd171db165797e677cc7a1c6 = L.circleMarker(
+                [35.8688, 129.0929],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_d6f5a7a9dd171db165797e677cc7a1c6.bindTooltip(
+                `<div>
+                     경상북도 경주시 건천읍 밀구1길 86-11 (용명리)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85c2e96355b978fd1979e53f105b6b0f = L.circleMarker(
+                [35.814, 129.1773],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_85c2e96355b978fd1979e53f105b6b0f.bindTooltip(
+                `<div>
+                     경상북도 경주시 내남로 795 (율동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d2edb40ef0a4113f55f79fd022a9e2bf = L.circleMarker(
+                [35.7874, 129.1923],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_d2edb40ef0a4113f55f79fd022a9e2bf.bindTooltip(
+                `<div>
+                     내남면 망성리216
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca0fcf990be0c634c0cc0f721ea2f81e = L.circleMarker(
+                [35.9667, 129.2048],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_ca0fcf990be0c634c0cc0f721ea2f81e.bindTooltip(
+                `<div>
+                     경북 경주시 천북면 천북로 5-13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_00a7f872bfd9d2edbf22317ded86fcc1 = L.circleMarker(
+                [36.0023, 129.2381],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_00a7f872bfd9d2edbf22317ded86fcc1.bindTooltip(
+                `<div>
+                     경상북도 경주시 강동면 호명리 474
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_682c9acf112c39f856d9db36e1bed80e = L.circleMarker(
+                [36.0024, 129.2383],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_682c9acf112c39f856d9db36e1bed80e.bindTooltip(
+                `<div>
+                     경상북도 경주시 강동면 호명리 491
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f7fdcb13dd891e3a30697e3f730e02bf = L.circleMarker(
+                [35.9901, 129.2219],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(map_a69bf7f3c84ecdfa410b6d62b591c388);
+        
+    
+            circle_marker_f7fdcb13dd891e3a30697e3f730e02bf.bindTooltip(
+                `<div>
+                     경상북도 경주시 경감로 466-266
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var measure_control_d08d66f92441ee65a417ad3512a16481 = new L.Control.Measure(
+                {"position": "topright", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "meters", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
+            map_a69bf7f3c84ecdfa410b6d62b591c388.addControl(measure_control_d08d66f92441ee65a417ad3512a16481);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+</script>
+</html>
